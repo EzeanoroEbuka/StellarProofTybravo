@@ -1,3 +1,4 @@
+import Ecosystem from "@/components/Ecosystem";
 import Header from "@/components/Header";
 
 export default function Home() {
@@ -5,6 +6,7 @@ export default function Home() {
     <div className="min-h-screen bg-darkblue-dark font-sans">
       <Header />
       <main className="w-full">
+
         <section
           id="home"
           className="flex min-h-[80vh] flex-col items-center justify-center px-4 py-24 text-center sm:px-6 lg:px-8"
@@ -17,6 +19,7 @@ export default function Home() {
             Web3 authenticity and blockchain verification.
           </p>
         </section>
+
         <section
           id="about"
           className="scroll-mt-16 px-4 py-20 sm:px-6 lg:px-8"
@@ -31,7 +34,9 @@ export default function Home() {
             </p>
           </div>
         </section>
-        <section
+
+      <Ecosystem />
+        {/* <section
           id="creator"
           className="scroll-mt-16 px-4 py-20 sm:px-6 lg:px-8"
           aria-label="Creator"
@@ -45,6 +50,7 @@ export default function Home() {
             </p>
           </div>
         </section>
+
         <section
           id="developer"
           className="scroll-mt-16 px-4 py-20 sm:px-6 lg:px-8"
@@ -58,7 +64,8 @@ export default function Home() {
               Developer ecosystem content.
             </p>
           </div>
-        </section>
+        </section> */}
+
         <section
           id="assets"
           className="scroll-mt-16 px-4 py-20 sm:px-6 lg:px-8"
@@ -73,6 +80,7 @@ export default function Home() {
             </p>
           </div>
         </section>
+
         <section
           id="use-cases"
           className="scroll-mt-16 px-4 py-20 sm:px-6 lg:px-8"
@@ -87,6 +95,7 @@ export default function Home() {
             </p>
           </div>
         </section>
+
         <section
           id="pricing"
           className="scroll-mt-16 px-4 py-20 sm:px-6 lg:px-8"
@@ -101,6 +110,7 @@ export default function Home() {
             </p>
           </div>
         </section>
+
       </main>
     </div>
   );
